@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtUpdateId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="I D 검색"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:onClick="onClickView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/btnUpdateSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:onClick="onClickView"
+        android:text="찾기"
+        app:layout_constraintBottom_toBottomOf="@+id/edtUpdateId"
+        app:layout_constraintStart_toEndOf="@+id/edtUpdateId"
+        app:layout_constraintTop_toTopOf="@+id/edtUpdateId" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="50dp"
+        android:background="#A1C7E4"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUpdateId"></LinearLayout>
+
+    <EditText
+        android:id="@+id/edtUpdateId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <EditText
+        android:id="@+id/edtUpdatePassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="passWord"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtUpdateId2"
+        app:layout_constraintStart_toStartOf="@+id/edtUpdateId2"
+        app:layout_constraintTop_toBottomOf="@+id/edtUpdateId2" />
+
+    <EditText
+        android:id="@+id/edtUpdateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtUpdatePassWord"
+        app:layout_constraintStart_toStartOf="@+id/edtUpdatePassWord"
+        app:layout_constraintTop_toBottomOf="@+id/edtUpdatePassWord" />
+
+    <Button
+        android:id="@+id/btnUpdateCancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:onClick="onClickView"
+        android:text="뒤로가기"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUpdateName" />
+
+    <Button
+        android:id="@+id/btnUpdateSave"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="onClickView"
+        android:text="수정 완료"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnUpdateCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdateCancel"
+        app:layout_constraintTop_toTopOf="@+id/btnUpdateCancel" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="회원 정보"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

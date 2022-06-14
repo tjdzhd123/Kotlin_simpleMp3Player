@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#A7CDEC"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="관리자 설정"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="                                     다양한 기능을 추가합니다." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAdminRemove"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:onClick="adminOnClickView"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <ImageView
+            android:id="@+id/ivAdminRemove"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/person_remove_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAdminRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="회원 삭제"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutAdminRemove"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutAdminRemove"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutAdminRemove" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAdminList"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="adminOnClickView"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayoutAdminRemove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayoutAdminRemove"
+        app:layout_constraintTop_toTopOf="@+id/linearLayoutAdminRemove"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <ImageView
+            android:id="@+id/ivAdminList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/list_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAdminList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="회원 목록"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutAdminList"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutAdminList"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutAdminList" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAdminCorrection"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="150dp"
+        android:onClick="adminOnClickView"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <ImageView
+            android:id="@+id/ivAdminCorrection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/correction_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAdminCorrection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="회원정보 수정"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutAdminCorrection"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutAdminCorrection"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutAdminCorrection" />
+
+    <Button
+        android:id="@+id/btnAdminCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="adminOnClickView"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

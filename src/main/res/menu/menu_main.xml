@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/search_menu"
+            android:title="검색"
+            app:showAsAction="always"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+
+    <item
+        android:id="@+id/favorites"
+        android:title="관심있는 음악 리스트"></item>
+</menu>
